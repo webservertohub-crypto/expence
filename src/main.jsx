@@ -12,12 +12,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./ExpenseDashboard.jsx";
+import { registerSW } from 'virtual:pwa-register'
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
 );
+registerSW()
 
 // if ("serviceWorker" in navigator) {
 //   window.addEventListener("load", () => {
